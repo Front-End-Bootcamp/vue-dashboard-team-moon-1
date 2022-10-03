@@ -1,0 +1,310 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name":"Dashboard",
+      "icon":"iconName"
+    }, 
+
+    {
+      "id": 2,
+      "name": "Projects",
+      "icon": "iconName"
+    }, 
+
+    {
+      "id": 3,
+      "name": "Modules",
+      "icon": "iconName"
+    }, 
+
+    {
+      "id": 4,
+      "name": "Sprint",
+      "icon": "iconName"
+    },
+
+    {
+      "id": 5,
+      "name": "Members",
+      "icon": "iconName"
+    },
+
+    { 
+      "id": 6,
+      "name": "Reports",
+      "icon": "iconName"
+    }
+  ],
+
+  "projects": [
+    {
+      "id": 1,
+      "title": "Project Title goes here",
+      "status": "Active",
+      "startDate": "12 Sep 2021",
+      "tasks": 14,
+      "progress": 67,
+      "users": 4,
+      "members": [
+        {
+          "id": 1,
+          "name": "John",
+          "photo": "png/profile_1.png"
+        },
+
+        {
+          "id": 2,
+          "name": "John",
+          "photo": "png/profile_1.png"
+        },
+
+        {
+          "id": 3,
+          "name": "John",
+          "photo": "png/profile_1.png"
+        },
+
+        {
+          "id": 4,
+          "name": "John",
+          "photo": "png/profile_1.png"
+        }
+      ] 
+    },
+
+    {
+      "id": 2,
+      "title": "Project Title goes here",
+      "status": "On Hold",
+      "startDate": "12 Sep 2021",
+      "tasks": 14,
+      "progress": 0,
+      "users": 0,
+      "members": [
+        {
+          "id": 1,
+          "name": "John",
+          "photo": "png/profile_4.png"
+        }
+      ] 
+    },
+
+    {
+      "id": 3,
+      "title": "Project Title goes here",
+      "status": "Inactive",
+      "startDate": "12 Sep 2021",
+      "tasks": 14,
+      "progress": 32,
+      "users": 4,
+      "members": [
+        {
+          "id": 1,
+          "name": "John",
+          "photo": "png/profile_1.png"
+        },
+
+        {
+          "id": 2,
+          "name": "John",
+          "photo": "png/profile_2.png"
+        },
+
+        {
+          "id": 3,
+          "name": "John",
+          "photo": "png/profile_3.png"
+        },
+
+        {
+          "id": 4,
+          "name": "John",
+          "photo": "png/profile_4.png"
+        }
+      ] 
+    },
+
+    {
+      "id": 4,
+      "title": "Project Title goes here",
+      "status": "Active",
+      "startDate": "12 Sep 2021",
+      "tasks": 7,
+      "progress": 7,
+      "users": 8,
+      "members": [
+        {
+          "id": 1,
+          "name": "John",
+          "photo": "png/profile_1.png"
+        },
+
+        {
+          "id": 2,
+          "name": "John",
+          "photo": "png/profile_2.png"
+        }
+      ] 
+    },
+
+    {
+      "id": 5,
+      "title": "Project Title goes here",
+      "status": "On Hold",
+      "startDate": "12 Sep 2021",
+      "tasks": 14,
+      "progress": 0,
+      "users": 0,
+      "members": [
+        { 
+          "id": 1,
+          "name": "John",
+          "photo": "png/profile_4.png"
+        }
+      ] 
+    },
+
+    {
+      "id": 6,
+      "title": "Project Title goes here",
+      "status": "Active",
+      "startDate": "12 Sep 2021",
+      "tasks": 14,
+      "progress": 97,
+      "users": 4,
+      "members": [
+        {
+          "id": 1,
+          "name": "John",
+          "photo": "png/profile_1.png"
+        },
+
+        {
+          "id": 2,
+          "name": "John",
+          "photo": "png/profile_2.png"
+        },
+
+        {
+          "id": 3,
+          "name": "John",
+          "photo": "png/profile_3.png"
+        },
+
+        {
+          "id": 4,
+          "name": "John",
+          "photo": "png/profile_4.png"
+        }
+      ] 
+    },
+
+    {
+      "id": 7,
+      "title": "Project Title goes here",
+      "status": "Active",
+      "startDate": "12 Sep 2021",
+      "tasks": 14,
+      "progress": 3,
+      "users": 4,
+      "members": [
+        {
+          "id": 1,
+          "name": "John",
+          "photo": "png/profile_1.png"
+        },
+
+        {
+          "id": 2,
+          "name": "John",
+          "photo": "png/profile_2.png"
+        },
+
+        {
+          "id": 3,
+          "name": "John",
+          "photo": "png/profile_3.png"
+        },
+
+        {
+          "id": 4,
+          "name": "John",
+          "photo": "png/profile_4.png"
+        }
+      ] 
+    },
+
+    {
+      "id": 8,
+      "title": "Project Title goes here",
+      "status": "Active",
+      "startDate": "12 Sep 2021",
+      "tasks": 14,
+      "progress": 79,
+      "users": 4,
+      "members": [
+        {
+          "id": 1,
+          "name": "John",
+          "photo": "png/profile_1.png"
+        },
+
+        {
+          "id": 2,
+          "name": "John",
+          "photo": "png/profile_2.png"
+        },
+
+        {
+          "id": 3,
+          "name": "John",
+          "photo": "png/profile_3.png"
+        },
+
+        {
+          "id": 4,
+          "name": "John",
+          "photo": "png/profile_4.png"
+        }
+      ] 
+    },
+
+    {
+      "id": 9,
+      "title": "Project Title goes here",
+      "status": "Active",
+      "startDate": "12 Sep 2021",
+      "tasks": 14,
+      "progress": 28,
+      "users": 4,
+      "members": [
+        {
+          "id": 1,
+          "name": "John",
+          "photo": "png/profile_1.png"
+        },
+
+        {
+          "id": 2,
+          "name": "John",
+          "photo": "png/profile_2.png"
+        },
+
+        {
+          "id": 3,
+          "name": "John",
+          "photo": "png/profile_3.png"
+        },
+
+        {
+          "id": 4,
+          "name": "John",
+          "photo": "png/profile_4.png"
+        }
+      ] 
+    }
+  ]
+}
+
+
