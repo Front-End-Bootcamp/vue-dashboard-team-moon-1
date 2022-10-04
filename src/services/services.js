@@ -15,5 +15,5 @@ export async function getProjects() {
 }
 
 export function getImage(imageName) {
-	return `src/assets/${imageName}.png`;
+	return `src/assets/png/${imageName}`;
 }
