@@ -50,25 +50,25 @@
         {
           "id": 1,
           "name": "John",
-          "photo": "png/profile_1.png"
+          "photo": "png/profile_1"
         },
 
         {
           "id": 2,
           "name": "John",
-          "photo": "png/profile_1.png"
+          "photo": "png/profile_2"
         },
 
         {
           "id": 3,
           "name": "John",
-          "photo": "png/profile_1.png"
+          "photo": "png/profile_3"
         },
 
         {
           "id": 4,
           "name": "John",
-          "photo": "png/profile_1.png"
+          "photo": "png/profile_4"
         }
       ] 
     },
@@ -85,7 +85,7 @@
         {
           "id": 1,
           "name": "John",
-          "photo": "png/profile_4.png"
+          "photo": "png/profile_4"
         }
       ] 
     },
@@ -102,25 +102,25 @@
         {
           "id": 1,
           "name": "John",
-          "photo": "png/profile_1.png"
+          "photo": "png/profile_1"
         },
 
         {
           "id": 2,
           "name": "John",
-          "photo": "png/profile_2.png"
+          "photo": "png/profile_2"
         },
 
         {
           "id": 3,
           "name": "John",
-          "photo": "png/profile_3.png"
+          "photo": "png/profile_3"
         },
 
         {
           "id": 4,
           "name": "John",
-          "photo": "png/profile_4.png"
+          "photo": "png/profile_4"
         }
       ] 
     },
@@ -137,13 +137,13 @@
         {
           "id": 1,
           "name": "John",
-          "photo": "png/profile_1.png"
+          "photo": "png/profile_1"
         },
 
         {
           "id": 2,
           "name": "John",
-          "photo": "png/profile_2.png"
+          "photo": "png/profile_2"
         }
       ] 
     },
@@ -160,7 +160,7 @@
         { 
           "id": 1,
           "name": "John",
-          "photo": "png/profile_4.png"
+          "photo": "png/profile_4"
         }
       ] 
     },
@@ -177,25 +177,25 @@
         {
           "id": 1,
           "name": "John",
-          "photo": "png/profile_1.png"
+          "photo": "png/profile_1"
         },
 
         {
           "id": 2,
           "name": "John",
-          "photo": "png/profile_2.png"
+          "photo": "png/profile_2"
         },
 
         {
           "id": 3,
           "name": "John",
-          "photo": "png/profile_3.png"
+          "photo": "png/profile_3"
         },
 
         {
           "id": 4,
           "name": "John",
-          "photo": "png/profile_4.png"
+          "photo": "png/profile_4"
         }
       ] 
     },
@@ -212,25 +212,25 @@
         {
           "id": 1,
           "name": "John",
-          "photo": "png/profile_1.png"
+          "photo": "png/profile_1"
         },
 
         {
           "id": 2,
           "name": "John",
-          "photo": "png/profile_2.png"
+          "photo": "png/profile_2"
         },
 
         {
           "id": 3,
           "name": "John",
-          "photo": "png/profile_3.png"
+          "photo": "png/profile_3"
         },
 
         {
           "id": 4,
           "name": "John",
-          "photo": "png/profile_4.png"
+          "photo": "png/profile_4"
         }
       ] 
     },
@@ -247,25 +247,25 @@
         {
           "id": 1,
           "name": "John",
-          "photo": "png/profile_1.png"
+          "photo": "png/profile_1"
         },
 
         {
           "id": 2,
           "name": "John",
-          "photo": "png/profile_2.png"
+          "photo": "png/profile_2"
         },
 
         {
           "id": 3,
           "name": "John",
-          "photo": "png/profile_3.png"
+          "photo": "png/profile_3"
         },
 
         {
           "id": 4,
           "name": "John",
-          "photo": "png/profile_4.png"
+          "photo": "png/profile_4"
         }
       ] 
     },
@@ -282,25 +282,25 @@
         {
           "id": 1,
           "name": "John",
-          "photo": "png/profile_1.png"
+          "photo": "png/profile_1"
         },
 
         {
           "id": 2,
           "name": "John",
-          "photo": "png/profile_2.png"
+          "photo": "png/profile_2"
         },
 
         {
           "id": 3,
           "name": "John",
-          "photo": "png/profile_3.png"
+          "photo": "png/profile_3"
         },
 
         {
           "id": 4,
           "name": "John",
-          "photo": "png/profile_4.png"
+          "photo": "png/profile_4"
         }
       ] 
     }
