@@ -78,7 +78,7 @@ const progressWidth = computed(() => `${props.item.progress}%`)
 
 <style scoped lang="scss">
 .card {
-	@apply w-[495px] h-[300px] border border-border p-6 flex flex-col justify-evenly rounded-lg gap-3;
+	@apply w-[495px] h-[300px] border border-gray-dark p-6 flex flex-col justify-evenly rounded-lg gap-3;
 
 	.label {
 		@apply text-xs;
@@ -92,7 +92,7 @@ const progressWidth = computed(() => `${props.item.progress}%`)
 		@apply flex justify-between items-center;
 
 		.title {
-			@apply text-lg font-medium text-[#3C557A];
+			@apply text-lg font-medium text-navy;
 		}
 
 		.icons {
@@ -105,13 +105,13 @@ const progressWidth = computed(() => `${props.item.progress}%`)
 
 
 		.members {
-			@apply grid grid-cols-2 p-1 py-3.5 bg-gray text-center divide-x divide-[#CDDCEE] w-[148px] rounded-md;
+			@apply grid grid-cols-2 p-1 py-3.5 bg-gray text-center divide-x divide-divider w-[148px] rounded-md;
 
 			&__badge {
 				@apply flex flex-col;
 
 				.value {
-					@apply text-lg text-[#3C557A] font-bold;
+					@apply text-lg text-navy font-bold;
 				}
 
 				.label {
@@ -132,7 +132,7 @@ const progressWidth = computed(() => `${props.item.progress}%`)
 			@apply flex gap-1;
 
 			.add-btn {
-				@apply border border-[#8b8b8b] h-8 w-8 rounded-full flex items-center justify-center;
+				@apply border border-gray-deep h-8 w-8 rounded-full flex items-center justify-center;
 			}
 		}
 	}
@@ -145,7 +145,7 @@ const progressWidth = computed(() => `${props.item.progress}%`)
 		}
 
 		&__bar {
-			@apply bg-gray-dark rounded-lg;
+			@apply bg-gray rounded-lg;
 
 			.width {
 				@apply h-2 bg-green rounded-md
