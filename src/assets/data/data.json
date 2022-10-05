@@ -3,37 +3,37 @@
     {
       "id": 1,
       "name":"Dashboard",
-      "icon":"iconName"
+      "icon":"Home"
     }, 
 
     {
       "id": 2,
       "name": "Projects",
-      "icon": "iconName"
+      "icon": "Projects"
     }, 
 
     {
       "id": 3,
       "name": "Modules",
-      "icon": "iconName"
+      "icon": "Modules"
     }, 
 
     {
       "id": 4,
       "name": "Sprint",
-      "icon": "iconName"
+      "icon": "Sprint"
     },
 
     {
       "id": 5,
       "name": "Members",
-      "icon": "iconName"
+      "icon": "Members"
     },
 
     { 
       "id": 6,
       "name": "Reports",
-      "icon": "iconName"
+      "icon": "Reports"
     }
   ],
 
