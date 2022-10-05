@@ -16,11 +16,11 @@ onMounted(async () => {
 </script>
 
 <template>
-	<div class="wrapper flex">
-		<div class="w-1/5">
+	<div class="wrapper flex gap-[30px]">
+		<div class="w-[315px]">
 			<Sidebar :categories="categories"/>
 		</div>
-		<div class="flex-1">
+		<div class="flex-1 flex flex-col gap-[30px]">
 			<Header/>
 			<CardGroup :data="projects"/>
 		</div>
