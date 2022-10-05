@@ -5,7 +5,7 @@ import Plus from '../../assets/svg/Plus.vue';
 import More from '../../assets/svg/More.vue';
 import Status from './Status.vue';
 import Edit from '../../assets/svg/Edit.vue';
-
+import Icon from '../Shared/Icon.vue';
 const props = defineProps(["item", "isActive"])
 const emits = defineEmits(["setActive"])
 const notOnHold = computed(() => props.item.status !== "On Hold")
@@ -17,9 +17,11 @@ const setActiveHandler = () => {
 </script>
 <template>
 	<div class="card" :class="{'shadow-2xl border-none': isActive}" @click="setActiveHandler">
+		<Icon name="bell"/>
 		<div class="card__header">
 			<span class="title">{{item.title}}</span>
 			<div class="icons">
+
 				<button v-if="props.isActive">
 					<Edit/>
 				</button>
