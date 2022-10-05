@@ -2,7 +2,7 @@
 
 import { defineAsyncComponent } from "vue";
 
-const IconComp = defineAsyncComponent(() => import(`/src/assets/svg/${props.icon}.vue`));
+const IconComp = defineAsyncComponent(() => import(/* @vite-ignore */`/src/assets/svg/${props.icon}.vue`));
 
 const props = defineProps(["name", "icon"]);
 
