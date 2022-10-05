@@ -1,5 +1,5 @@
 <template>
-	<div class="logo">
+	<div class="wrapper">
 		<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<circle cx="12" cy="12" r="10" stroke="#0075FF" stroke-width="4" />
 		</svg>
@@ -11,12 +11,13 @@
 </template>
 
 <style scoped lang="scss">
-.logo {
-	display: flex;
-	align-items: flex-end;
+.wrapper {
+	position: relative;
 
 	.small {
-		transform: translateX(-60%) translateY(45%);
+		position: absolute;
+		bottom: -6.5px;
+		left: 15px;
 	}
 }
 </style>
