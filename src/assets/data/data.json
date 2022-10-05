@@ -56,19 +56,19 @@
         {
           "id": 2,
           "name": "John",
-          "photo": "profile_1.png"
+          "photo": "profile_2.png"
         },
 
         {
           "id": 3,
           "name": "John",
-          "photo": "profile_1.png"
+          "photo": "profile_3.png"
         },
 
         {
           "id": 4,
           "name": "John",
-          "photo": "profile_1.png"
+          "photo": "profile_4.png"
         }
       ] 
     },
