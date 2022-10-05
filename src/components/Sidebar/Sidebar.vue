@@ -1,8 +1,19 @@
 <script setup>
-
+import MenuItem from "./MenuItem.vue";
+const props = defineProps(["categories"]);
 </script>
+
 <template>
-	<div>
-		Sidebar
+	<div class="wrapper">
+		<div class="sidebar">
+			<div class="sidebar__menu">
+				<MenuItem
+					v-for="item in props.categories"
+					:key="item.name"
+					:name="item.name"
+					:icon="item.icon"
+				/>
+			</div>
+		</div>
 	</div>
 </template>
