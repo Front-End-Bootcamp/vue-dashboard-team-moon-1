@@ -13,7 +13,7 @@ const activeButtonHandler = () => {
 
 <template>
 	
-	<div class="menuitem" @click="activeButtonHandler">
+	<div class="menuitem" @click="activeButtonHandler" :class = "{active: isActive}">
 		<IconComp />
 		<button>{{ props.name }}</button>
 	</div>
@@ -25,6 +25,12 @@ const activeButtonHandler = () => {
 		gap: 18.5px;
 		padding: 16px 30px;		
 		align-items: center;
+	}
+
+	.active{
+		color:#00DB99;
+		background: #F9F9F9 ;
+		border-radius: 8px;
 	}
 
 
