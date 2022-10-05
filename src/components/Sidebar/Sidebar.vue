@@ -1,8 +1,74 @@
 <script setup>
+import {ref} from "vue";
+import MenuItem from "./MenuItem.vue";
+import MenuLogo from "./MenuLogo.vue";
+import ShowSide from "@/assets/svg/ShowSide.vue";
+const props = defineProps(["categories"]);
+
+const activeCategory = ref(null);
+
+function activeCategoryHandler(id){
+	activeCategory.value = id
+}
 
 </script>
+
 <template>
-	<div>
-		Sidebar
-	</div>
+		<div class="sidebar">
+					
+			<div class="sidebar__header">
+				<MenuLogo/>			
+				<ShowSide class="collapse"/>
+			</div>
+			<div class="sidebar__menu">
+				<MenuItem 
+					@setCategory="activeCategoryHandler(item.id)"  
+					v-for="item in props.categories"
+					:key="item.id"
+					:name="item.name"
+					:icon="item.icon"
+					:isActive="item.id === activeCategory"
+				/>
+			</div>
+			
+			<div class="logout">
+				
+			 <MenuItem name="Log out" icon="Logout"/></div>
+		</div>
 </template>
+
+<style>
+	.sidebar{
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		border-right: 1px solid #F1F2F7;
+		padding-top: 42px;
+
+		
+	}
+
+	.logout{
+		margin-top: auto;
+		padding-left: 20px;
+		display: flex;
+		color:#ff285c;
+		border-top: 1px solid #F1F2F7;
+		padding-top: 8px;
+		
+	}
+
+	.sidebar__menu{
+		margin-top:47px;
+		margin-left: 20px;
+	}
+
+	.sidebar__header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-right: 22px;
+
+	}
+	
+</style>
