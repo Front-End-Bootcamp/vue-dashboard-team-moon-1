@@ -1,10 +1,5 @@
 <script setup>
-import PlusIcon from '../../assets/svg/Plus.vue';
-import List from '../../assets/svg/List.vue';
-import Search from '../../assets/svg/Search.vue';
-import Message from '../../assets/svg/Message.vue';
-import Bell from '../../assets/svg/Bell.vue';
-import Settings from '../../assets/svg/Settings.vue';
+import Icon from '../Shared/Icon.vue';
 
 </script>
 <template>
@@ -13,13 +8,13 @@ import Settings from '../../assets/svg/Settings.vue';
 			<h1 class="sectionHeader">Projects</h1>
 			<div class="pushRight">
 				<div class="inputWrapper">
-					<Search class="searchIcon" />
+					<Icon name="Search" class="searchIcon"/>
 					<input class="txtInput" type="text" placeholder="Search">
 				</div>
 				<div class="topButtons">
-					<Message />
-					<Bell />
-					<Settings />
+					<Icon name="Message"/>
+					<Icon name="Bell"/>
+					<Icon name="Settings"/>
 				</div>
 				<div class="profileInfos">
 					<img class="profilePhoto" src="../../assets/png/profile_1.png" alt="profile_photo">
@@ -33,7 +28,7 @@ import Settings from '../../assets/svg/Settings.vue';
 		</div>
 		<div class="bottom">
 			<button class="newButton">
-				<PlusIcon class="plusIcon" color="white" />
+				<Icon name="HeaderPlus"/>
 				New
 			</button>
 			<div class="bottombars">
@@ -45,7 +40,7 @@ import Settings from '../../assets/svg/Settings.vue';
 					<button>Completed</button>
 					<div class="right">
 						<button>Default</button>
-						<List />
+						<Icon name="List"/>
 					</div>
 				</div>
 			</div>
@@ -162,7 +157,7 @@ import Settings from '../../assets/svg/Settings.vue';
 
 		.newButton {
 			@apply flex justify-center items-center px-[1.9rem] py-[0.8rem];
-			@apply rounded-[26px] bg-green text-white; 
+			@apply rounded-[26px] bg-green text-white fill-white; 
 			@apply text-[18px] font-medium gap-[15px];
 			// display: flex;
 			// justify-content: center;
