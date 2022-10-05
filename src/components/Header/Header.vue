@@ -11,6 +11,7 @@ import Settings from '../../assets/svg/Settings.vue';
 	<div class="wrapper">
 		<div class="top">
 			<h1 class="sectionHeader">Projects</h1>
+			<div class="pushRight">
 			<div class="inputWrapper">
 				<Search class="searchIcon" />
 				<input class="txtInput" type="text" placeholder="Search">
@@ -20,11 +21,15 @@ import Settings from '../../assets/svg/Settings.vue';
 				<Bell />
 				<Settings />
 			</div>
-			<img class="profilePhoto" src="../../assets/png/profile_1.png" alt="profile_photo">
 			<div class="profileInfos">
-				<p class="person">Asfak Mahmudb</p>
-				<p class="mail">asfakmahmudb@gmail.com</p>
+				<img class="profilePhoto" src="../../assets/png/profile_1.png" alt="profile_photo">
+				<div>
+					<p class="person">Asfak Mahmudb</p>
+					<p class="mail">asfakmahmudb@gmail.com</p>
+				</div>
 			</div>
+			</div>
+
 		</div>
 		<div class="bottom">
 			<button class="newButton">
@@ -32,16 +37,16 @@ import Settings from '../../assets/svg/Settings.vue';
 				New
 			</button>
 			<div class="bottombars">
-				<div class="filterButtonsLeft">
+				<div class="filterButtons">
 					<button>All</button>
 					<button>Inactive</button>
 					<button>Active</button>
 					<button>On hold</button>
 					<button>Completed</button>
-				</div>
-				<div class="filterButtonsRight">
-					<button>Default</button>
-					<List />
+					<div class="right">
+						<button>Default</button>
+						<List />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -50,28 +55,28 @@ import Settings from '../../assets/svg/Settings.vue';
 </template>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-//font-family: 'Roboto', sans-serif;
-
-
 .wrapper {
 	display: flex;
 	flex-direction: column;
 	height: 160px;
 	width: 100%;
-	background-color: azure;
+	padding: 30px 30px 0;
 
 	.top {
 		display: flex;
 		align-items: center;
-		height: 65%;
+		justify-content: space-between;
+		margin-bottom: 28px;
 
+		.pushRight{
+			display: flex;
+			padding: 0 100px;
+			margin-left: auto;
+		}
 
 		.sectionHeader {
-			font-family: 'Roboto', sans-serif;
-			font-size: 24px;
+			font-size: 28px;
 			font-weight: 500;
-			margin-left: 30px;
 			color: #3C557A;
 		}
 
@@ -82,7 +87,6 @@ import Settings from '../../assets/svg/Settings.vue';
 			width: 442px;
 			background-color: #F1F2F7;
 			border-radius: 8px;
-			margin-left: 384px;
 
 			.searchIcon {
 				margin-left: 22px;
@@ -91,7 +95,8 @@ import Settings from '../../assets/svg/Settings.vue';
 
 			.txtInput {
 				outline: none;
-				background-color: #00db9900;
+				background-color: #F1F2F7;
+				// background-color: #00db9900;
 				width: 80%;
 			}
 		}
@@ -99,15 +104,24 @@ import Settings from '../../assets/svg/Settings.vue';
 		.topButtons {
 			display: flex;
 			align-items: center;
-			gap: 29px;
-			margin-left: 145px;
+			gap: 39px;
+			margin-left: 148px;
 		}
 
-		.profilePhoto{
-			margin-left: 54px;
-			margin-right: 15px;
-		}
+		// .profilePhoto {
+		// 	margin-left: 54px;
+		// 	margin-right: 15px;
+		// }
+
 		.profileInfos {
+			display: flex;
+			gap: 16px;
+			align-items: center;
+			margin-left: 54px;
+
+		.profilePhoto {
+			width: 40px;
+		}
 			.person {
 				font-size: 16px;
 				font-weight: 500;
@@ -117,64 +131,84 @@ import Settings from '../../assets/svg/Settings.vue';
 			.mail {
 				font-size: 12px;
 				font-weight: 400;
-				color: #8B8B8B;
+				// color: #8B8B8B;
 			}
 		}
-
 	}
 
 	.bottom {
 		display: flex;
 		align-items: flex-end;
+		gap: 30px;
 		height: 50%;
+		color: #8b8b8b;
 
 		.newButton {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			height: 52px;
-			width: 127px;
+			padding: .8rem 1.9rem;
+			// height: 52px;
+			// min-width: 127px;
 			border-radius: 26px;
 			background-color: #00DB99;
 			color: white;
-			margin-left: 30px;
 			font-size: 18px;
 			font-weight: 500;
-			font-family: 'Roboto', sans-serif;
-			gap: 5px;
+			// font-family: 'Roboto', sans-serif;
+			gap: 15px;
 		}
 
 		.bottombars {
 			display: flex;
 			width: 100%;
 			height: 52px;
-			margin-left: 30px;
+			padding: 0 20px;
+			// margin-left: 30px;
+			border-radius: 8px;
+			border: 1px solid #F1F2F7;
 
-			.filterButtonsLeft {
+			.filterButtons {
 				display: flex;
-				justify-content: center;
+				flex: 1;
+				justify-content: flex-start;
 				align-items: center;
 				gap: 48px;
+				margin-left: 20px;
 				font-family: 'Roboto', sans-serif;
 				font-size: 14px;
 				font-weight: 400;
-				color: #8B8B8B;
+				// color: #8B8B8B;
 
-				
+				.right {
+					justify-self: end;
+					margin-left: auto;
+					// width: 100%;
+					display: flex;
+					// justify-content: flex-end;
+					align-items: center;
+					gap: 18px;
+					// margin-right: 18px;
+					// font-family: 'Roboto', sans-serif;
+					font-size: 14px;
+					font-weight: 400;
+					// color: #8B8B8B;
+				}
+
 			}
 
-			.filterButtonsRight {
-				width: 100%;
-				display: flex;
-				justify-content: flex-end;
-				align-items: center;
-				gap: 18px;
-				margin-right: 18px;
-				font-family: 'Roboto', sans-serif;
-				font-size: 14px;
-				font-weight: 400;
-				color: #8B8B8B;
-			}
+			// .filterButtonsRight {
+			// 	width: 100%;
+			// 	display: flex;
+			// 	justify-content: flex-end;
+			// 	align-items: center;
+			// 	gap: 18px;
+			// 	margin-right: 18px;
+			// 	font-family: 'Roboto', sans-serif;
+			// 	font-size: 14px;
+			// 	font-weight: 400;
+			// 	color: #8B8B8B;
+			// }
 		}
 	}
 
