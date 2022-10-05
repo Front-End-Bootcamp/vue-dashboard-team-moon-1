@@ -4,6 +4,7 @@ import { getImage } from '@/services/services';
 import Plus from '../../assets/svg/Plus.vue';
 import More from '../../assets/svg/More.vue';
 import Status from './Status.vue';
+import Edit from '../../assets/svg/Edit.vue';
 
 const props = defineProps(["item", "isActive"])
 const emits = defineEmits(["setActive"])
@@ -19,7 +20,12 @@ const setActiveHandler = () => {
 		<div class="card__header">
 			<span class="title">{{item.title}}</span>
 			<div class="icons">
-				<More />
+				<button v-if="props.isActive">
+					<Edit/>
+				</button>
+				<button>
+					<More />
+				</button>
 			</div>
 		</div>
 		<div v-show="notOnHold">
@@ -81,6 +87,7 @@ const setActiveHandler = () => {
 	.thin {
 		@apply text-xs;
 	}
+
 	.boldie {
 		@apply text-[13px] font-medium;
 	}
@@ -93,7 +100,7 @@ const setActiveHandler = () => {
 		}
 
 		.icons {
-			@apply flex;
+			@apply flex gap-[30px];
 		}
 	}
 
