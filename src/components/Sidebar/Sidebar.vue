@@ -5,7 +5,6 @@ const props = defineProps(["categories"]);
 </script>
 
 <template>
-	<div class="wrapper">
 		<div class="sidebar">
 			<MenuLogo/>
 			<div class="sidebar__menu">
@@ -16,6 +15,19 @@ const props = defineProps(["categories"]);
 					:icon="item.icon"
 				/>
 			</div>
+			<div class="logout">Logout</div>
 		</div>
-	</div>
 </template>
+
+<style>
+	.sidebar{
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		padding: 42px 20px;
+	}
+
+	.logout{
+		margin-top: auto;
+	}
+</style>
