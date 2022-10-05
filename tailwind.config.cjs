@@ -24,7 +24,10 @@ module.exports = {
 					"dark": "#E5E5E5",
 					"deep": "#8B8B8B"
 				},
-				"navy": "#3C557A",
+				"navy": {
+					DEFAULT: "#3C557A",
+					"dark": "#25364F"
+				},
 				"divider": "#CDDCEE",
 			}
 		},

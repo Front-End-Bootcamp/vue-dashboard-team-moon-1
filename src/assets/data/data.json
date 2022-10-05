@@ -37,6 +37,33 @@
     }
   ],
 
+	"filters": [
+		{
+			"id": 1,
+			"name": "All"
+		},
+
+		{
+			"id": 2,
+			"name": "Inactive"
+		},
+
+		{
+			"id": 3,
+			"name": "Active"
+		},
+
+		{
+			"id": 4,
+			"name": "On hold"
+		},
+
+		{
+			"id": 5,
+			"name": "Completed"
+		}		
+	],
+
   "projects": [
     {
       "id": 1,
