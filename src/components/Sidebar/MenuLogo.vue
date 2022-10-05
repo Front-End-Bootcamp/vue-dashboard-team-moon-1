@@ -13,7 +13,9 @@ import Logo from '../../assets/svg/Logo.vue';
 	.logo{
 		display: flex;
 		align-items: center;
-		gap: 5px;
+		gap: 15px;
+		margin-left: 40px;
+
 	}
 
 	.brand{
