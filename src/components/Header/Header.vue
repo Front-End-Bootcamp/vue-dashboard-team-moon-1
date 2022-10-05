@@ -33,7 +33,7 @@ import Settings from '../../assets/svg/Settings.vue';
 		</div>
 		<div class="bottom">
 			<button class="newButton">
-				<PlusIcon class="plusIcon" />
+				<PlusIcon class="plusIcon" color="white" />
 				New
 			</button>
 			<div class="bottombars">
