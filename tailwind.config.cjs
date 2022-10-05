@@ -12,8 +12,12 @@ module.exports = {
 			colors: {
 				"primary": "#717986",
 				"green": "#00DB99",
-				"inactive": "#FF285C",
-				"onhold": "#F0BB00",
+				"yellow": {
+					"450": "#F0BB00"
+				},
+				"rose":{
+					"550": "#FF285C"
+				},
 				"gray": {
 					"light": "#F9F9F9",
 					DEFAULT: "#F1F2F7",
