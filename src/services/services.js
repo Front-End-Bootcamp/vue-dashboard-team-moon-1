@@ -14,6 +14,21 @@ export async function getProjects() {
 	return data;
 }
 
+export async function getActiveUser() {
+	const data = await fetch(url)
+		.then((data) => data.json())
+		.then((data) => data.user);
+	return data;
+}
+
+export async function getFilters() {
+	const data = await fetch(url)
+		.then((data) => data.json())
+		.then((data) => data.filters);
+	return data;
+}
 export function getImage(imageName) {
 	return `src/assets/png/${imageName}`;
 }
+
+
