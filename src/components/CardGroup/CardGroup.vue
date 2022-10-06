@@ -1,6 +1,6 @@
 <script setup>
 	import { ref } from "vue";
-	import Card from "./Card.vue";
+	import Card from "./Card/Card.vue";
 	const props = defineProps(["data"])
 	const activeCard = ref(null)
 	const activeCardHandler = (id) => {
