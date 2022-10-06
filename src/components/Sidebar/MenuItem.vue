@@ -24,7 +24,10 @@ const activeButtonHandler = () => {
 		padding: 16px 30px;		
 		align-items: center;
 	}
-
+	.menuitem:hover{
+		background: #F9F9F9;
+		border-radius: 8px;
+	}
 	.active{
 		color:#00DB99;
 		background: #F9F9F9 ;
