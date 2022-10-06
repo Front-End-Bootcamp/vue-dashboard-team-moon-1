@@ -1,4 +1,10 @@
 {
+	"user": {
+		"fullname": "Asfak Mahmud",
+		"email": "asfakmahmudbd@gmaill.com",
+		"photo": "profile_1.png"
+	},
+	
   "categories": [
     {
       "id": 1,
