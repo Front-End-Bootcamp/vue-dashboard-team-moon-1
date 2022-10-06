@@ -41,7 +41,7 @@ function activeCategoryHandler(id){
 	.sidebar{
 		display: flex;
 		flex-direction: column;
-		height: 100vh;
+		height: 100%;
 		padding-top: 42px;
 		min-width: 315px;
 	}
@@ -53,6 +53,9 @@ function activeCategoryHandler(id){
 		color:#ff285c;
 		border-top: 1px solid #F1F2F7;
 		padding-top: 8px;
+		position: sticky;
+		bottom: 0;
+
 	}
 
 	.sidebar__menu{
