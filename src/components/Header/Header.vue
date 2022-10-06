@@ -12,38 +12,7 @@ const handleActiveFilter = (filter) => {
 	activeFilter.value = filter
 }
 const searchText = ref("")
-const user = ref({
-	fullname: "Asfak Mahmud",
-	email: "asfakmahmudbd@gmaill.com",
-	photo: "profile_1.png"
-})
 
-const filters = ref([
-	{
-		"id": 1,
-		"name": "All"
-	},
-
-	{
-		"id": 2,
-		"name": "Inactive"
-	},
-
-	{
-		"id": 3,
-		"name": "Active"
-	},
-
-	{
-		"id": 4,
-		"name": "On hold"
-	},
-
-	{
-		"id": 5,
-		"name": "Completed"
-	}
-])
 </script>
 <template>
 	<div class="wrapper">
@@ -56,7 +25,7 @@ const filters = ref([
 					<Icon name="Bell" />
 					<Icon name="Settings" />
 				</div>
-				<User :user="user" />
+				<User :user="props.activeUser" />
 			</div>
 		</div>
 		<div class="bottom">
@@ -64,7 +33,7 @@ const filters = ref([
 				<Icon name="HeaderPlus" />
 				New
 			</button>
-			<Filters :filters="filters" @setActiveFilter="handleActiveFilter" />
+			<Filters :filters="props.filters" @setActiveFilter="handleActiveFilter" />
 		</div>
 	</div>
 </template>
