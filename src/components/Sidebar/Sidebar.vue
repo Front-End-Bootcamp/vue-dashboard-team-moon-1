@@ -42,7 +42,6 @@ function activeCategoryHandler(id){
 		display: flex;
 		flex-direction: column;
 		height: 100vh;
-		border-right: 1px solid #F1F2F7;
 		padding-top: 42px;
 		min-width: 315px;
 	}
