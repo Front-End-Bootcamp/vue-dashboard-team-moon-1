@@ -23,8 +23,10 @@ onMounted(async () => {
 
 <template>
 	<div class="main">
-		<Sidebar :categories="categories"/>
-		<div class="flex-1 flex flex-col gap-[30px]">
+		<div class="main__side">
+			<Sidebar :categories="categories"/>
+		</div>
+		<div class="main__content">
 			<Header :filters="filters" :activeUser="activeUser"/>
 			<CardGroup :data="projects"/>
 		</div>
@@ -33,6 +35,14 @@ onMounted(async () => {
 
 <style scoped lang="scss">
 	.main{
-		@apply flex gap-[30px]
+		@apply flex gap-[30px];
+		
+		&__side{
+			@apply border-r border-gray min-h-full
+		}
+
+		&__content{
+			@apply flex-1 flex flex-col gap-[30px];
+		}
 	}
 </style>
