@@ -6,9 +6,9 @@ import Filters from './Filters.vue';
 import { ref } from 'vue';
 
 const props = defineProps(["activeUser", "filters"])
-const activeFilter = ref(null)
+const emits = defineEmits(["setActiveFilter"])
 const handleActiveFilter = (filter) => {
-	activeFilter.value = filter
+	emits("setActiveFilter", filter)
 }
 const searchText = ref("")
 
