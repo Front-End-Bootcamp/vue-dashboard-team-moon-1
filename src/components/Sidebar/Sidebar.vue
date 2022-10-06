@@ -32,8 +32,8 @@ function activeCategoryHandler(id){
 			</div>
 			
 			<div class="logout">
-				
-			 <MenuItem name="Log out" icon="Exit"/></div>
+			 <MenuItem name="Log out" icon="Exit"/>
+			</div>
 		</div>
 </template>
 
@@ -44,6 +44,7 @@ function activeCategoryHandler(id){
 		height: 100vh;
 		border-right: 1px solid #F1F2F7;
 		padding-top: 42px;
+		min-width: 315px;
 
 		
 	}
