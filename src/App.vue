@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, computed } from 'vue';
 import { getCategories, getProjects, getFilters, getActiveUser } from "@/services/services"
 import Sidebar from "./components/Sidebar/Sidebar.vue"
 import Header from "./components/Header/Header.vue"
@@ -8,6 +8,14 @@ const categories = ref([])
 const projects = ref([])
 const filters = ref([])
 const activeUser = ref({})
+const activeFilter = ref(null)
+const filteredProjects = computed(() => projects.value.filter(project => activeFilter.value?.name ? activeFilter.value.name === project.status : true))
+
+const handleFilter = (filter) => {
+	filter.name === "All"
+	? activeFilter.value = true
+	: activeFilter.value = filter
+}
 
 onMounted(async () => {
 	const categoriesData = await getCategories()
@@ -22,13 +30,14 @@ onMounted(async () => {
 </script>
 
 <template>
+
 	<div class="main">
 		<div class="main__side">
 			<Sidebar :categories="categories"/>
 		</div>
 		<div class="main__content">
-			<Header :filters="filters" :activeUser="activeUser"/>
-			<CardGroup :data="projects"/>
+			<Header :filters="filters" :activeUser="activeUser" @setActiveFilter="handleFilter"/>
+			<CardGroup :data="filteredProjects"/>
 		</div>
 	</div>
 </template>	

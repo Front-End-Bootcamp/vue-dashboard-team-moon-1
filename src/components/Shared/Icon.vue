@@ -1,9 +1,12 @@
 <script setup>
-	const props = defineProps(["name"])
+import { defineAsyncComponent } from 'vue';
+
+const props = defineProps(["name"])
+const Icon = defineAsyncComponent(() => import(`/src/components/Icons/${props.name}.vue`/* @vite-ignore */))
 </script>
 
 <template>
-	<div>
-		<img :src="`/src/assets/svg/${props.name}.svg`" alt="icon">
-	</div>
+	<button>
+		<Icon />
+	</button>
 </template>	

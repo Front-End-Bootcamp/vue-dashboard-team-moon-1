@@ -3,10 +3,10 @@ import Logo from '@/components/Shared/Logo.vue';
 
 </script>
 <template>
-	<div class="logo">
+	<a href="#" class="logo">
 		<Logo/>
 		<span class="brand">ChirKuut</span>
-	</div>
+	</a>
 </template>
 
 <style scoped>
