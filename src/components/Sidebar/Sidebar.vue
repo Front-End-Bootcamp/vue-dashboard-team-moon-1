@@ -41,6 +41,7 @@ function activeCategoryHandler(id){
 	.sidebar{
 		display: flex;
 		flex-direction: column;
+		min-height: 100vh;
 		height: 100%;
 		padding-top: 42px;
 		min-width: 315px;
