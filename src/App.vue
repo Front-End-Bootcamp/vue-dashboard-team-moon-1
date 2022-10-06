@@ -22,7 +22,7 @@ onMounted(async () => {
 </script>
 
 <template>
-	<div class="wrapper">
+	<div class="main">
 		<Sidebar :categories="categories"/>
 		<div class="flex-1 flex flex-col gap-[30px]">
 			<Header :filters="filters" :activeUser="activeUser"/>
@@ -32,7 +32,7 @@ onMounted(async () => {
 </template>	
 
 <style scoped lang="scss">
-	.wrapper{
+	.main{
 		@apply flex gap-[30px]
 	}
 </style>
