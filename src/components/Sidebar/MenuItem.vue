@@ -1,5 +1,5 @@
 <script setup>
-import Icon from "../Shared/Icon.vue";
+import Icon from "@/components/Shared/Icon.vue";
 const props = defineProps(["name", "icon", "isActive"]);
 const emits = defineEmits(["setCategory"])
 
@@ -10,15 +10,15 @@ const activeButtonHandler = () => {
 </script>
 
 <template>
-	
-	<div class="menuitem" @click="activeButtonHandler" :class = "{active: isActive}">
+	<a href="#" class="menuitem" @click="activeButtonHandler" :class = "{active: isActive}">
 		<Icon :name="props.icon"/>
-		<button>{{ props.name }}</button>
-	</div>
+		{{ props.name }}
+	</a>
 </template>
 
 <style scoped>
 	.menuitem{
+		width: 100%;
 		display: flex;
 		gap: 18.5px;
 		padding: 16px 30px;		

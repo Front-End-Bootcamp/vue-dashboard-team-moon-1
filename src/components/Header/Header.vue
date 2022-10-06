@@ -7,7 +7,6 @@ import { ref } from 'vue';
 
 const props = defineProps(["activeUser", "filters"])
 const activeFilter = ref(null)
-
 const handleActiveFilter = (filter) => {
 	activeFilter.value = filter
 }
@@ -22,7 +21,7 @@ const searchText = ref("")
 				<Search v-model="searchText" />
 				<div class="topButtons">
 					<Icon name="Message" />
-					<Icon name="Bell" />
+					<Icon name="BellActive" />
 					<Icon name="Settings" />
 				</div>
 				<User :user="props.activeUser" />
