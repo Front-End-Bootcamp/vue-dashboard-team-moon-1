@@ -32,8 +32,8 @@ function activeCategoryHandler(id){
 			</div>
 			
 			<div class="logout">
-				
-			 <MenuItem name="Log out" icon="Exit"/></div>
+			 <MenuItem name="Log out" icon="Exit"/>
+			</div>
 		</div>
 </template>
 
@@ -44,8 +44,7 @@ function activeCategoryHandler(id){
 		height: 100vh;
 		border-right: 1px solid #F1F2F7;
 		padding-top: 42px;
-
-		
+		min-width: 315px;
 	}
 
 	.logout{
@@ -55,12 +54,10 @@ function activeCategoryHandler(id){
 		color:#ff285c;
 		border-top: 1px solid #F1F2F7;
 		padding-top: 8px;
-		
 	}
 
 	.sidebar__menu{
-		margin-top:47px;
-		margin-left: 20px;
+		margin: 47px 20px 0;
 	}
 
 	.sidebar__header{
@@ -68,7 +65,6 @@ function activeCategoryHandler(id){
 		align-items: center;
 		justify-content: space-between;
 		padding-right: 22px;
-
 	}
 	
 </style>
