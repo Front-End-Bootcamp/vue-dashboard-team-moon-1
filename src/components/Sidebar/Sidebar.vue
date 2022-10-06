@@ -2,10 +2,10 @@
 import {ref} from "vue";
 import MenuItem from "./MenuItem.vue";
 import MenuLogo from "./MenuLogo.vue";
-import ShowSide from "@/assets/svg/ShowSide.vue";
+import Icon from "../Shared/Icon.vue";
 const props = defineProps(["categories"]);
 
-const activeCategory = ref(null);
+const activeCategory = ref(2);
 
 function activeCategoryHandler(id){
 	activeCategory.value = id
@@ -18,7 +18,7 @@ function activeCategoryHandler(id){
 					
 			<div class="sidebar__header">
 				<MenuLogo/>			
-				<ShowSide class="collapse"/>
+				<Icon name="Collapse" class="collapse"/>
 			</div>
 			<div class="sidebar__menu">
 				<MenuItem 
@@ -33,7 +33,7 @@ function activeCategoryHandler(id){
 			
 			<div class="logout">
 				
-			 <MenuItem name="Log out" icon="Logout"/></div>
+			 <MenuItem name="Log out" icon="Exit"/></div>
 		</div>
 </template>
 
