@@ -16,6 +16,6 @@
 	
 	<style scoped lang="scss">
 		.group{
-			@apply flex flex-wrap gap-[30px]
+			@apply flex flex-wrap gap-[30px] mb-[30px]
 		}
 	</style>
