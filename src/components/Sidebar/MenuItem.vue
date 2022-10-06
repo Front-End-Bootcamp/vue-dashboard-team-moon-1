@@ -1,7 +1,5 @@
 <script setup>
-
-import { defineAsyncComponent } from "vue";
-const IconComp = defineAsyncComponent(() => import(/* @vite-ignore */`/src/assets/svg/${props.icon}.vue`));
+import Icon from "../Shared/Icon.vue";
 const props = defineProps(["name", "icon", "isActive"]);
 const emits = defineEmits(["setCategory"])
 
@@ -14,7 +12,7 @@ const activeButtonHandler = () => {
 <template>
 	
 	<div class="menuitem" @click="activeButtonHandler" :class = "{active: isActive}">
-		<IconComp />
+		<Icon :name="props.icon"/>
 		<button>{{ props.name }}</button>
 	</div>
 </template>

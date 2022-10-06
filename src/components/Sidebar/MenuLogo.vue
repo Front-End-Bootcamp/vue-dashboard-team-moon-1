@@ -1,5 +1,5 @@
 <script setup>
-import Logo from '../../assets/svg/Logo.vue';
+import Logo from '@/components/Shared/Logo.vue';
 
 </script>
 <template>
@@ -13,8 +13,8 @@ import Logo from '../../assets/svg/Logo.vue';
 	.logo{
 		display: flex;
 		align-items: center;
-		gap: 15px;
-		margin-left: 40px;
+		gap: 22px;
+		margin-left: 20px;
 
 	}
 
