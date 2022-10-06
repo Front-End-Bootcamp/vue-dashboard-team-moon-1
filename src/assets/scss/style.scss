@@ -9,3 +9,10 @@ body,
 	@apply text-primary
 }
 
+.thin {
+	@apply text-xs;
+}
+
+.boldie {
+	@apply text-[13px] font-medium;
+}
